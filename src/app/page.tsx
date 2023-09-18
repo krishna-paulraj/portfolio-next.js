@@ -3,12 +3,13 @@ import About from "./components/section/About";
 import Experience from "./components/section/Experience";
 import Footer from "./components/Footer";
 export default function Home() {
+  const text = "I'm";
   return (
     <div className="flex flex-col mt-20">
       <section className="h-[85vh] mx-8 md:mx-28 flex flex-col items-center justify-center text-center gap-24 ">
         <h1 className="relative hero-txt text-3xl md:text-7xl">
-          Hi, I'm <span className="name">Suresh Krishna</span>,<br /> and I'm an
-          Web Developer.
+          Hi, {text} <span className="name">Suresh Krishna</span>,<br /> and{" "}
+          {text} an Web Developer.
           <Image
             className="absolute right-1 top-3 md:top-24"
             src="/assets/underline.png"
