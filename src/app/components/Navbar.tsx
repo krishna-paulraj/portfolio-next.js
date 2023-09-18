@@ -2,10 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar() {
+  const domain = process.env.DOMAIN;
   return (
     <header className="sticky top-0 flex justify-around items-center p-3 backdrop-blur-3xl">
       <div className="flex items-center gap-4">
-        <h1 className="text-3xl">Domain.com</h1>
+        <h1 className="text-3xl">{domain}</h1>
         <Image
           src="/assets/night-mode.png"
           width={20}
