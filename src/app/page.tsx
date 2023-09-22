@@ -2,6 +2,7 @@ import Image from "next/image";
 import About from "./components/section/About";
 import Experience from "./components/section/Experience";
 import Footer from "./components/Footer";
+import Skills from "./components/section/Skills";
 export default function Home() {
   const text = "I'm";
   return (
@@ -37,6 +38,7 @@ export default function Home() {
 
       <About />
       <Experience />
+      <Skills />
       <Footer />
     </div>
   );
